@@ -1,0 +1,1 @@
+sudo find ~/../../usr/ -type f -name *.xml | egrep -v 't|-|[0 - 9]' > week_1_2_results.txt
