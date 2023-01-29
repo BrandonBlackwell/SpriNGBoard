@@ -1,0 +1,1 @@
+cat words_alpha.txt | dos2unix | egrep '^i.....$' | sed 's/^insert$/brandon/g' | sed 's/z/-/g' | xargs -n 5 > week_1_results
