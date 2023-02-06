@@ -10,10 +10,19 @@ int fib(int N)
   //////////////////////////////////////////
   // INSERT ITERATIVE IMPLEMENTATION HERE //
   //////////////////////////////////////////
- int i = 0;
- while(i <= n){
-
+  if (N < 2){
+    return N;
+  }
+  int a = 0;
+  int b = 1;
+  int sum; 
+  while(N > 1){
+    sum = a+b;
+    a = b;
+    b = sum;
+    N -= 1; 
   } 
+    return sum;
 }
 
 int main ()
