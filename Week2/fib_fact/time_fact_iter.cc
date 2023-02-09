@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-
+#include <cstdint>
 #include <chrono>
 
 using namespace std;
@@ -11,6 +11,18 @@ int64_t fact(int N)
   // INSERT ITERATIVE IMPLEMENTATION HERE //
   //////////////////////////////////////////
 
+  int64_t f = 1;
+  int64_t i = N;
+  while(i >= 1){
+    f = f*i;
+    --i;
+  }
+  if (N < 2){
+    return 1;
+  }
+  else {
+    return f;
+  }
   // Pay attention to the return type!
 }
 
