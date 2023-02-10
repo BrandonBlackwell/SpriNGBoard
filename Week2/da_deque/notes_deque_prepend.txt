@@ -1,0 +1,11 @@
+Observations:
+- Index 0,1 takes longer to prepend.
+- Index 128 takes longer to prepend.
+- Index 256 takes longer to prepend.
+- Index 384 takes longer to prepend.
+- Index 512 takes longer to prepend.
+- Index 640 takes longer to prepend.
+- Index 768 takes longer to prepend.
+- Index 896 takes longer to prepend.
+- Index 1024 takes longer to prepend.
+

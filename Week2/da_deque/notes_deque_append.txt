@@ -1,0 +1,13 @@
+Observations:
+- Index 0,1 takes longer to append.
+- Index 127 takes longer to append
+- Index 255 takes longer to append
+- Index 383 takes longer to append
+- Index 511 takes longer to append
+- Index 639 takes longer to append
+- Index 767 takes longer to append
+- Index 895 takes longer to append
+- Index 1023 takes longer to append
+
+- Not sure what the memory allocation is.
+

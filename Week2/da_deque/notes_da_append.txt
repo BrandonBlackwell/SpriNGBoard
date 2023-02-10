@@ -1,0 +1,20 @@
+Observations:
+- The code is timing how long it takes to append an item(from 0 - 9999) every iteration in nanoseconds. It repeats this 5 times. 
+- Index 0 - 2 takes longer to append.
+- Index 4 also takes longer to append.
+- Index 8 takes longer.
+- Index 16 takes longer.
+- Index 32 takes longer.
+- Index 64 takes longer.
+- Index 128 takes longer.
+- Index 256 takes longer.
+- Index 512 takes longer.
+- Index 1024 takes longer.
+etc...
+
+- There is a pattern here. Looks like powers of 2.
+- I'm assuming the dynamic array is reallocating space at these points which slows the time down.
+
+
+
+

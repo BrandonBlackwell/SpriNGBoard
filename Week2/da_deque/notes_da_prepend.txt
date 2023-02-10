@@ -1,0 +1,18 @@
+Observations:
+- Index 0 - 2 takes longer to prepend.
+- Index 4 also takes longer to prepend.
+- Index 8 takes longer.
+- Index 16 takes longer.
+- Index 32 takes longer.
+- Index 64 takes longer.
+- Index 128 takes longer.
+- Index 256 takes longer.
+- Index 512 takes longer.
+- Index 1024 takes longer.
+etc...
+
+- Although it still takes longer at the powers of 2 points, every iteration takes much longer to prepend than appending.
+- Which makes sense because prepending to a dynamic array takes O(n) time. It has allocate memory at every index.
+
+
+
