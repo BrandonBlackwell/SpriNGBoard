@@ -1,8 +1,8 @@
 #include <iostream>
 #include <iomanip>
-#include <cstdint>
+
 #include <chrono>
-// Header file was intentionally left blank. Nice touch Kevin. :-)
+
 
 // int64_t type is a signed integer type with width of exactly 8, 16, 
 // 32, and 64 bits with no padding bits and using 2's complement for 
