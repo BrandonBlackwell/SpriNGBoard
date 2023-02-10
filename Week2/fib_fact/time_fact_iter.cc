@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include <cstdint>
+//#include <cstdint>
 #include <chrono>
 
 using namespace std;
@@ -17,18 +17,13 @@ int64_t fact(int N)
     f = f*i;
     --i;
   }
-  if (N < 2){
-    return 1;
-  }
-  else {
-    return f;
-  }
+  return f;
   // Pay attention to the return type!
 }
 
 int main ()
 {
-  for (int N=0; N<20; ++N)
+  for (int N=0; N<25; ++N)
   {
     auto start = chrono::high_resolution_clock::now();
 

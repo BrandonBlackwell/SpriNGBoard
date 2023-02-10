@@ -1,0 +1,10 @@
+Dynamic Array Prepend vs. Dynamic Array Append:
+- For both appending/prepending I can see that they both have memory allocations at the powers of two points but on average it takes much longer for the a dynamic array to prepend items than append items.
+
+Deque Prepending vs. Deque Appending:
+- Both appending/prepending seem to have taken around the same amount of time.
+
+Comparing All:
+- The memory allocations for dynamic arrays seemed to always happen at the powers of two points. Deques had allocations at the powers of two points as well but they also had allocations in between those points.
+- On average it took deques around the same amount of time for both processes but for dynamic arrays there were clear differences in the time it took for appending/prepending.
+- There was also increases in time at random indexes.
