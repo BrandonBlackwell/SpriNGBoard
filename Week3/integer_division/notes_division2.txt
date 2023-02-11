@@ -1,0 +1,4 @@
+Observation:
+- The program compiles but crashes when ran. 
+- There is a floating point exception.
+ 

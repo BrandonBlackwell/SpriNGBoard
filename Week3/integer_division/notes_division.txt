@@ -1,0 +1,7 @@
+Observations:
+- Looks like the denominators are above the dashed line
+- The numerators are on the left side.
+- The result of the numerator divided by the denominator is placed on the same line untile the 
+iteration finshes.
+- The result is stored as an int32_t type.
+- The results of the integer division truncates toward zero.
