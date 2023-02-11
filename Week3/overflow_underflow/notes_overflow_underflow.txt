@@ -1,0 +1,5 @@
+Observations:
+- The signed 32bit integer after decrementing by 1 decreases to -1 as it should because the first bit is reserved for the sign of the integer which tells the compiler wether the integer is positive or negative. 
+- When the unsigned 32bit integer is decremented this causes an UNDERFLOW because unsigned integers can only be positive. The resulting output of the underflow wraps around to the max positive integer.
+- The signed 16bit integer after incrementation shows 1 as it should. It simply adds 1 to 0.
+- The unsigned 16bit integer shows 1 as it should. Again, unsigned ints can only be positive and incrementing by 1 will result in a positive value so nothing goes wrong there.
