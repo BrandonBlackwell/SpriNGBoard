@@ -1,0 +1,5 @@
+Observations:
+- The denominators are on the top line and the numerators are on the far left. 
+- Each numerator is divided by the denominator in the same index position.
+- The code produces floating point types in scientific notation.
+- The precision is set to 3 numbers after the decimal point.

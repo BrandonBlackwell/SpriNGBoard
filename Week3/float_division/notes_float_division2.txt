@@ -1,0 +1,7 @@
+Observations:
+- The code now produces results for all integer num/denom division.
+- The results are floating point types in scientific notation.
+- So, because the type for numerators are float's the results are converted to float
+because of the fractional part.
+- An interesting thing happens when the denominator is 0. 
+The result of dividing the numerator by 0 becomes a -inf, -nan at 0, +inf.
