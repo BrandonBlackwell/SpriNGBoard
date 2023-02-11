@@ -1,0 +1,4 @@
+Observations:
+- The sum variable of big and small int32_t variables displays the correct result. One hundred million and one is simply added together and stored in the sum variable.
+- All three floating point numbers are printed out with only 1 decimal value after the decimal point.
+

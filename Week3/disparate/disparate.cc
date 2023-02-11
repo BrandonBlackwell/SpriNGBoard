@@ -10,6 +10,9 @@ int main ()
     // CREATE THREE int32_t VALUES //
     // (big, small, sum)           //
     /////////////////////////////////
+    int32_t big{100'000'000};
+    int32_t small{1};
+    int32_t sum{big+small};
 
 
     cout << "int32_t:" << endl;
@@ -23,6 +26,9 @@ int main ()
     // CREATE THREE float VALUES //
     // (big, small, sum)         //
     ///////////////////////////////
+    float big{100000000.123};
+    float small{1.54321};
+    float sum{big+small};
 
 
     cout << "float:" << endl;
