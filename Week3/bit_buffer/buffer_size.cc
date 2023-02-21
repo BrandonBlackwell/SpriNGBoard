@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include <vector>
 
 using namespace std;
@@ -8,7 +9,12 @@ int32_t buffer_size (int32_t W, int32_t N)
   /////////////////////////////
   // IMPLEMENT FUNCTION HERE //
   /////////////////////////////
-
+  //if(N == 0){
+  //  return 0;
+  //}else if(N < 8){
+  //  return 1;
+  //}
+  return (N + W - 1) / W;
 }
 
 int main ()
