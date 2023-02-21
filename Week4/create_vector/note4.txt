@@ -1,0 +1,7 @@
+Observations:
+
+Using the assignment operator with parens to initialize a vector creates
+an error. The compiler see's this as an "int" type and cannot convert
+between the two types.
+
+

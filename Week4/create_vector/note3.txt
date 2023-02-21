@@ -1,0 +1,6 @@
+Observations:
+
+When using parens to initialize the vector it creates a vector of size 10 with each
+element being a 5.
+
+This format is not interchangeable with the curly brace initialization.

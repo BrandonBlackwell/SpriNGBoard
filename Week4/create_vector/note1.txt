@@ -1,0 +1,4 @@
+Observations:
+
+The curly brace initializer creates a vector of two
+elements, [10, 5].

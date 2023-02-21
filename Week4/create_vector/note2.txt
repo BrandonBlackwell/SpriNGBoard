@@ -1,0 +1,3 @@
+Observations:
+
+Using the assignment operator along with the curly braces also creates a vector of two elements, 10 and 5.
