@@ -1,0 +1,5 @@
+Observations:
+
+The load factor increases. This happens because items are being placed into random 
+buckets which increases the amount of items per bucket which increases the load 
+factor.

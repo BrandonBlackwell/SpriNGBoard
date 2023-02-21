@@ -1,0 +1,3 @@
+Observations:
+
+Internally the items are organized into buckets in no particular order. The bucket an item is placed into depends on the hash.

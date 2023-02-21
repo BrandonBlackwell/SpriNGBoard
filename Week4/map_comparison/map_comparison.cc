@@ -1,6 +1,8 @@
 #include <iostream>
+#include <map>
+#include <unordered_map>
+#include <utility>
 #include <vector>
-
 /////////////////////////////////////////
 // INCLUDE NECESSARY HEADER FILES HERE //
 /////////////////////////////////////////
@@ -14,18 +16,24 @@ void func_map (vector<pair<int,string>>& items)
   ////////////////////////////////////////////////
   // CREATE AN EMPTY map MAPPING int TO string. //
   ////////////////////////////////////////////////
-
+  map<int,string> my_map{};
 
   ////////////////////////////////////////////
   // USING A RANGE-BASED for(...) LOOP,     //
   // INSERT EACH ITEM IN items INTO THE MAP //
   ////////////////////////////////////////////
+  for(const auto& [k,v] : items){
+    my_map.insert({k,v});
+  }
 
 
   //////////////////////////////////////////////
   // USING A RANGE-BASED for(...) LOOP,       //
   // PRINT OUT EACH KEY-VALUE PAIR IN THE MAP //
   //////////////////////////////////////////////
+  for(const auto& [k,v] : my_map){
+    cout << k << " : " << v << endl;
+  }
 
 
   cout << endl << "=== END func_map ===" << endl;
@@ -38,7 +46,7 @@ void func_unordered_map (vector<pair<int,string>>& items)
   //////////////////////////////////////////////////////////
   // CREATE AN EMPTY unordered_map MAPPING int TO string. //
   //////////////////////////////////////////////////////////
-
+  unordered_map<int,string> my_u_map{};
 
   /////////////////////////////////////////////
   // USING A RANGE-BASED for(...) LOOP,      //
@@ -50,13 +58,22 @@ void func_unordered_map (vector<pair<int,string>>& items)
   // IN THE FOLLOWING FORMAT:                //
   //   o  "[N,B,LF] = [3,10,0.4432]"         //
   /////////////////////////////////////////////
-
+  for(const auto& kv : items){
+    my_u_map.insert(make_pair(kv.first,kv.second));
+    cout << "[N,B,LF] " << "= "
+    "["  << my_u_map.size() << 
+    ","  << my_u_map.bucket_count() << 
+    ","  << my_u_map.load_factor() <<
+    "]"  << endl;
+  }
 
   ///////////////////////////////////////////////
   // USING A RANGE-BASED for(...) LOOP,        //
   // PRINT OUT EACH KEY-VALUE PAIR IN THE MAP. //
   ///////////////////////////////////////////////
-
+  for(const auto& [key, value] : my_u_map){
+    cout << key << " : " << value << endl;
+  }
 
   cout << endl << "=== END func_unordered_map ===" << endl;
 }
