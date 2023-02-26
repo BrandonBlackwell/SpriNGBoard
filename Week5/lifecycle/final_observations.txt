@@ -1,0 +1,28 @@
+Regular objects:
+ The lifetime of the objects created in main die when main ends. Except o_7, it's
+ created in main and dies when it's contents are stolen using the move constructor. 
+
+
+
+Vector Section:
+  - When using "noexcept" the move comstructor is used to transfer the 
+  objects data.
+  - Without noexcept most objects data are copied except "v_1[1]" because 
+  of the "push_back" method, the move constructor is used to move the data.
+  The other objects are copied then appended to the vector using "emplace_back".
+  (Note to self) So, if I use emplace_back to append an item and then try
+  to move the item, it will be moved with the copy constructor. If I use 
+  the push_back method and try to move it, the move constructor will be 
+  used.
+
+
+
+Pointer Section:
+  Outer Scope up_1(id:20),sp_1(id:21)
+  Inner Scope = up_2(id:22), up_3, sp_2(id:23)
+  - up_1(id:20) is created in the outer scope and dies in the inner scope. Why?
+  - sp_1(id:21) is created in the outer scope and dies after sp_2 is assigned
+  to it.
+  - up_2(id:22) is created on the inner scope and dies when the inner scope ends. 
+  - sp_2(id:23) is created in the inner scope and dies when outside of outer scope.
+  Why?

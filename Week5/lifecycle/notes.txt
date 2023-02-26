@@ -1,0 +1,29 @@
+Observations:
+
+- Object o_1 is created using the default constructor
+- Object o_2 is created using the custom constructor
+- o_3 is created from o_2 using the copy constructor.
+o_3 is unitialized until it is given o_2's data.
+- Object o_4 is created using the custom constructor.
+- Object o_4 copies o_1 using the operator=(copy assignment operator). o_4's data is overwritten with o_1's dat
+- Object o_5 is created using the move constructor. The resources are moved from o_1.
+- The resources of o_3 are moved to o_1 using the move constructor.
+- Object o_6 is created by calling function which
+returns an instance of myClass and assigned to o_6 using copy assignment operator. 
+*- Object o_7 is created by calling function. Function returns rvalues from the move constructor. The copy assignment operator tries to init o_7 with rvalues.
+
+VECTOR
+- A vector v_1 of MyClasses is declared.
+- v_1 is initialized with an rvalue v_1[0] using emplace_back method which constructs an object and gives it the rvalue.
+- An object of MyClass v_1[1] is appended. 
+- Uses emplace_back to append an object initialized with v_1[2]
+- Another vector v_2 is created using the copy assignment operator. v_2 copies from v_1.
+- v_3 is created with the values from v_1 by using the move constructor.
+
+POINTERS:
+- A unique smart pointer is created up_1 of type MyClass. 
+- A shared smart pointer is created.
+- A unique smart pointer is created up_2 of type MyClass. 
+- Up_3 is created with the contents of up_1.
+- sp_2 A shared smart pointer is created.
+- sp_1 is overwritten by sp_2 using copy assignment operator.
