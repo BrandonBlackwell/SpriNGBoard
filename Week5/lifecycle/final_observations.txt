@@ -5,7 +5,7 @@ Regular objects:
 
 
 Vector Section:
-  - When using "noexcept" the move comstructor is used to transfer the 
+  - When using "noexcept" the move constructor is used to transfer the 
   objects data.
   - Without noexcept most objects data are copied except "v_1[1]" because 
   of the "push_back" method, the move constructor is used to move the data.
@@ -20,9 +20,9 @@ Vector Section:
 Pointer Section:
   Outer Scope up_1(id:20),sp_1(id:21)
   Inner Scope = up_2(id:22), up_3, sp_2(id:23)
-  - up_1(id:20) is created in the outer scope and dies in the inner scope. Why?
+  - up_1(id:20) is created in the outer scope and dies in the inner scope.
   - sp_1(id:21) is created in the outer scope and dies after sp_2 is assigned
   to it.
   - up_2(id:22) is created on the inner scope and dies when the inner scope ends. 
   - sp_2(id:23) is created in the inner scope and dies when outside of outer scope.
-  Why?
+  
