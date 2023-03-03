@@ -1,0 +1,52 @@
+Observations:
+
+NON-CONST STRING EXPERIMENTS
+
+non_const_by_ref()
+- Variable does what I expect. It's passed by ref so the original is modified.
+- This explains why &ncs == &s.
+
+non_const_by_val()
+- &ncs and &s are different because "ncs" is passed by value. There are two different variables stored at two different memory addresses. A copy is made which explains why &ncs != &s and the value isn't modified.
+
+const_by_ref()
+- &ncs == &s because ncs passed by ref. Since the reference is const there will be no modifications to the original variable.
+
+const_by_val()
+- &ncs != &s because ncs is passed by value which means a copy of the original variable is made.
+- Since the copy is made const it is immutable. 
+
+overloaded_func()
+- ncs is simply passed by ref. 
+
+CONST STRING EXPERIMENTS:
+
+non_const_by_ref()
+- An error occurs. "binding reference of type string& to const string" 
+- The compiler does not allow passing an argument of type const string to function that accepts string reference.
+
+non_const_by_val()
+- &cs != &s because cs is passed by value, therefore a copy was made which is explains different memory addresses. 
+- Since the cs variable was made a const in main it cannot be modified in main.
+- *I assume the 's' variable is modified since it's a copy.
+
+const_by_ref()
+- &cs == &s because cs is passed by ref. The ref is made const, and the original is made const.
+- Therefore it is immutable.
+- When trying to modify 's' an error occurs, "no matching function for call to append(const char) const"- Which make's sense because it's immutable.
+
+const_by_val()
+- &cs != &s because "cs" is passed by value.
+- Modifying the copy causes an error to occur, "no matching function for call to append(const char) const"- Which make's sense because it's immutable.
+
+EXERCISE 2 QUESTIONS/ANSWERS:
+
+1. The address of s sometimes matches the address of ncs/cs because it a reference to the original. Which means it is just an alias of the original so the memory address is the same. Other times they do not match because s is a copy of the of the original so it has a different memory location hence why the address is different.
+
+2. ncs before/after sometimes match because sometimes the copy is being modified not the original. cs before/after always match because if a variable is declared const in main the value will always remain the same.
+
+3. I'm assuming the compiler matches the arguments with the function signature. 
+
+4. size() method is never rejected because it isn't modifying the value unlike append()!!
+
+5. The compiler complains when calling non_const_by_ref() function when it's given a const variable because the function signature accepts string's not const string's. The non_const_by_val() signature copies the cs variable. The copy is not const, the original is.

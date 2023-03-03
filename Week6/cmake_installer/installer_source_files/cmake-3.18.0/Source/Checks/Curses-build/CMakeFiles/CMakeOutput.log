@@ -1,0 +1,28 @@
+Determining if the function wsyncup exists in the /usr/lib64/libcurses.so passed with the following output:
+Change Dir: /home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Source/Checks/Curses-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_5243c/fast && gmake  -f CMakeFiles/cmTC_5243c.dir/build.make CMakeFiles/cmTC_5243c.dir/build
+gmake[1]: Entering directory `/home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5243c.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=wsyncup -o CMakeFiles/cmTC_5243c.dir/CheckFunctionExists.c.o -c /home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5243c
+/home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_5243c.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=wsyncup -rdynamic CMakeFiles/cmTC_5243c.dir/CheckFunctionExists.c.o -o cmTC_5243c  -lcurses 
+gmake[1]: Leaving directory `/home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function cbreak exists in the /usr/lib64/libncurses.so passed with the following output:
+Change Dir: /home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Source/Checks/Curses-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_1951e/fast && gmake  -f CMakeFiles/cmTC_1951e.dir/build.make CMakeFiles/cmTC_1951e.dir/build
+gmake[1]: Entering directory `/home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1951e.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=cbreak -o CMakeFiles/cmTC_1951e.dir/CheckFunctionExists.c.o -c /home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1951e
+/home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_1951e.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=cbreak -rdynamic CMakeFiles/cmTC_1951e.dir/CheckFunctionExists.c.o -o cmTC_1951e  -lncurses 
+gmake[1]: Leaving directory `/home/brandon/Brandon/SpriNGBoard/Week6/cmake_installer/installer_source_files/cmake-3.18.0/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+
+
+
