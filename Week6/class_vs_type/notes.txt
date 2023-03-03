@@ -1,0 +1,10 @@
+1:
+- Line 1 is displaying the address of x
+- Line 2 is displaying the address of x's alias rx
+- Line 3 is displaying the address of x's const alias crx.
+
+2:
+- The output values are all the same because they are referencing the same string object or variable.There is only one string object is this program.
+
+3:
+- x is non-const before line 6. When line 6 runs x becomes const because of the reference crx and then appended to which makes no sense because x is now const which means it is immutable so, how can it be modified?.?.?.
