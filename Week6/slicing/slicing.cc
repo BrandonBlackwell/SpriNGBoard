@@ -23,6 +23,7 @@ int main ()
 {
   Cow c;
 
+  // cr is an alias 
   Animal & cr = c;
   Animal   cs = c;
 

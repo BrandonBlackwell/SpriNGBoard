@@ -1,0 +1,5 @@
+Slicing
+
+c and cr are the same object. This why moo outputs on the first two lines.
+For the last line I'm guessing that when the copy constructor is used and you have a base class and derived class the compiler has to make a decision, so it defaults to
+the base class.

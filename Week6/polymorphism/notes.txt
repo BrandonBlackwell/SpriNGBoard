@@ -1,0 +1,18 @@
+Basic Polymorphism and Virtual Functions
+
+The Cow and FullCow classes inherit from the Animal class which is an abstract class 
+because it constains a pure virtual method. Since the Animal class contains a
+pure virtual method, Cow and FullCow classes have to provide their own polymorphic method.
+
+1. The "moo" is output because the poke function is called on a Cow object. Cow class
+is a derived class that contains a virtual method, "make_sound()", that prints "moo".
+The "Ooof - I ate too much" is output because the poke function is called on a FullCow 
+object. FullCow class is a derived class that contains a virtual method, "make_sound()", 
+that prints "Ooof - I ate too much".
+
+2. FullCow is still able to override Cow's make_sound() method because of the override keyword. It ensures that a virtual function from a base class is overriden. 
+Cow is the base class of FullCow so Cow's make_sound() method will be overriden by 
+FullCow's method.
+
+3. The final specifier does not allow virtual function to be overridden in a
+derived class. 
