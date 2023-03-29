@@ -1,0 +1,1 @@
+/usr/bin/g++ -O2 CMakeFiles/test__Bowling.dir/test__Bowling.cc.o -o test__Bowling  ../../../catch_install/lib64/libCatch2Main.a ../../src/bowling_lib/libBowling.a ../../../catch_install/lib64/libCatch2.a 

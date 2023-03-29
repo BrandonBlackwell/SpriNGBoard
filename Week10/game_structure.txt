@@ -1,0 +1,6 @@
+Components needed for bowling game
+ - At least 1 player
+ - At most 1 ScoreBoard
+ - Running total for each player
+ - Frame number
+ - Frame score (At most 2 rolls per frame unless they roll a strike or it's the last frame)

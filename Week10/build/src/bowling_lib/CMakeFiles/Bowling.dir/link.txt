@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBowling.a CMakeFiles/Bowling.dir/bowling.cc.o
+/usr/bin/ranlib libBowling.a

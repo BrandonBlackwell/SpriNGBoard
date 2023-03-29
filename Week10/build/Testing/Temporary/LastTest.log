@@ -1,0 +1,22 @@
+Start testing: Mar 29 10:58 PDT
+----------------------------------------------------------
+1/1 Testing: test__Bowling
+1/1 Test: test__Bowling
+Command: "/home/brandon/Brandon/SpriNGBoard/Week10/build/test/bowling_lib/test__Bowling"
+Directory: /home/brandon/Brandon/SpriNGBoard/Week10/build
+"test__Bowling" start time: Mar 29 10:58 PDT
+Output:
+----------------------------------------------------------
+Randomness seeded to: 4036081032
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test__Bowling" end time: Mar 29 10:58 PDT
+"test__Bowling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 29 10:58 PDT
