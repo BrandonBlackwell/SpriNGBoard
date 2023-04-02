@@ -304,11 +304,29 @@ catch2/internal/catch_move_and_forward.hpp
 
 ../catch_install/include/catch2/internal/catch_void_type.hpp
 
+../catch_install/include/catch2/matchers/catch_matchers.hpp
+catch2/matchers/internal/catch_matchers_impl.hpp
+-
+catch2/internal/catch_move_and_forward.hpp
+-
+string
+-
+vector
+-
+
+../catch_install/include/catch2/matchers/internal/catch_matchers_impl.hpp
+catch2/internal/catch_test_macro_impl.hpp
+-
+catch2/internal/catch_move_and_forward.hpp
+-
+
 ../src/bowling_lib/bowling.h
 
 /home/brandon/Brandon/SpriNGBoard/Week10/test/bowling_lib/test__Bowling.cc
 bowling.h
 /home/brandon/Brandon/SpriNGBoard/Week10/test/bowling_lib/bowling.h
 catch2/catch_test_macros.hpp
+-
+catch2/matchers/catch_matchers.hpp
 -
 

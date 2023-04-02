@@ -39,5 +39,7 @@ test/bowling_lib/CMakeFiles/test__Bowling.dir/test__Bowling.cc.o
  ../catch_install/include/catch2/internal/catch_unique_name.hpp
  ../catch_install/include/catch2/internal/catch_unique_ptr.hpp
  ../catch_install/include/catch2/internal/catch_void_type.hpp
+ ../catch_install/include/catch2/matchers/catch_matchers.hpp
+ ../catch_install/include/catch2/matchers/internal/catch_matchers_impl.hpp
  ../src/bowling_lib/bowling.h
  /home/brandon/Brandon/SpriNGBoard/Week10/test/bowling_lib/test__Bowling.cc
