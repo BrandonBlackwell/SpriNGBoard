@@ -31,4 +31,25 @@ TEST_CASE ("if record_ball() is called when the game is over throw exception")
 }
 #endif
 
+TEST_CASE ("get_score() returns player's current score")
+{
+  SECTION( "At the start of the game the player's score is 0"  ) {
+    REQUIRE(g.get_score() == 0);
+  }
 
+  SECTION( "At the start of every frame there are 10 pins" ) {
+    for(auto frame : g.frames) {
+      REQUIRE( g.frame_count == 10 );
+    }
+  }
+
+  SECTION( "After player's first roll the num of pins knocked down should be added to score"  ) {
+    g.record_ball(5);
+    REQUIRE(g.get_score() == 5);
+  }
+
+  SECTION( "After player's second roll the num of pins knocked down should be added to score"  ) {
+    g.record_ball(5);
+    REQUIRE(g.get_score() == 10);
+  }
+}
