@@ -1,1 +1,36 @@
 lvalues and rvalues
+
+There is a function named "func" that is being overloaded
+- There is an overload that passes an int by reference
+- There is an overload that passes an int by const reference
+- There is an overload that passes a rvalue reference
+- There is an overload that passes a const rvalue reference
+
+When we pass a value (values do not have a memory address) as an argument to func(), the function with the rvalue parameter is used.
+That is why we see func(int && x) rvalue ref three times.
+  func(5);
+  func(2+3);
+  func(int{5});
+
+- When we pass a variable (variables have a memory address) as an argument to func(), the function with the lvalue parameter is used.
+- The next line shows func(int && x) rvalue ref because the result is a value after dividing. Values have no memory address.
+- The next line shows func(int && x) rvalue ref because we are "stealing the guts" of variable x, which is a value.
+  int x = 5;
+  func(x);
+  func(x/2);
+  func(move(x));
+
+- We see "const lvalue" because we are passing a const int so the overload with const & will be used.
+- Performing an arithmetic operation using a variable will result in an rvalue.
+- Move "steals the guts" which is a value and by using const in this fashion this means that we do not want to change the value.
+
+  const int y = 5;
+  func(y);
+  func(y/2);
+  func(move(y));
+
+DISABLING THE SECOND IF PRAGMA:
+- Move in this situation does not happen because it is a request to move not demand. So the program allows it to happen.
+
+DISABLING THE SECOND IF PRAGMA:
+- Errors happen because we are passing const int to functions with parameters of int&

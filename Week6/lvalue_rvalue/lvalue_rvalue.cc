@@ -5,7 +5,7 @@ using namespace std;
 void func (int & x)
 { cout << "func(int & x): lvalue ref" << endl; }
 
-#if 1
+#if 0
 void func (int const & x)
 { cout << "func(int const & x): const lvalue ref" << endl; }
 #endif
@@ -13,7 +13,7 @@ void func (int const & x)
 void func (int && x)
 { cout << "func(int && x) rvalue ref" << endl; }
 
-#if 1
+#if 0
 void func (int const && x)
 { cout << "func(int const && x) const rvalue ref" << endl; }
 #endif
